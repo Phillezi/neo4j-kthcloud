@@ -17,7 +17,7 @@ graph TB
 
     NGINX_Proxy -- "WSS (443) → WSS (bolt) (7687)" --> Neo4j
 
-    NGINX_Proxy -- "HTTPS (443 → 8080)" --> NGINX_Internal
+    NGINX_Proxy -- "HTTPS (443) → HTTP (8080)" --> NGINX_Internal
 ```
 
 ## Deploy step by step
